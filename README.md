@@ -104,7 +104,9 @@ Top 5 processes by MEM usage:
 
 ## Error Handling
 
-The script includes built-in parameter validations. Failing to supply an argument or inputting an invalid parameter will terminate execution with a specific status exit code (1) and output helpful guidance:
+The script includes built-in parameter validations. Failing to supply an argument or inputting an invalid parameter will terminate execution with a specific status exit code (1) and output helpful guidance
+
+### Idea has taken from: https://roadmap.sh/projects/server-stats
 
 ## License
 
