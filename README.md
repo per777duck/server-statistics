@@ -36,14 +36,16 @@ The project includes a `Makefile` to quickly set up or remove the utility global
 Run the following command to copy the script to `/usr/local/bin` and automatically grant executable permissions (working only in project directory):
 
 ```bash
-make install```
+make install
+```
 
 ### Uninstallation
 
 If you wish to cleanly remove the application and its binaries from your system (working only in project directory):
 
 ```bash
-make uninstall```
+make uninstall
+```
 
 ## Usage
 
