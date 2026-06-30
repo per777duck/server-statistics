@@ -68,7 +68,7 @@ Alternative (Local Repository):
 ## Example Output
 
 When running server-stat --start, you will see a neatly formatted interface resembling the following layout:
-```bash
+```plaintext
 --------------------------------------Users--------------------------------------
 Users in network:
   username pts/0        2026-06-30 14:22 (192.168.1.5)
