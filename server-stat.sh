@@ -10,7 +10,12 @@ users=$(w -sf | awk 'NR!=1{print $0}')
 echo "${users}" | sed 's/^/  /'
 
 echo -e "${YELLOW}---------------------------------Server statistics--------------------------------"
-echo -e "CPU usage:${NC}"
+echo -e  "Load average:${NC}"
+LC_ALL=C uptime | LC_ALL=C awk '{print "1m: " $8 "5m: " $9 "15m: " $10}' | sed 's/,/ /g' |  sed 's/^/  /'
+
+echo ""
+
+echo -e "${YELLOW}CPU usage:${NC}"
 cpu_usage=$(LC_ALL=C top -b -n 1 | grep -i "cpu(s)" | sed 's/.*, *\([0-9.]* *id.*\)/\1/' | sed 's/,/./g' | LC_ALL=C awk '{printf "%.1f%%", 100 - $1}')
 echo "Used: ${cpu_usage}" | sed 's/^/  /'
 
