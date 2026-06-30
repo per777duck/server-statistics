@@ -99,11 +99,11 @@ case "$1" in
 		exit 0
 		;;
 	"")
-		echo -e "${RED}ОШИБКА: аргумент не указан. Используйте --help для справки${NC}"
+		echo -e "${RED}ERROR: No argument specified. Use --help for help.${NC}"
 		exit 1
 		;;
 	*)
-		echo -e "${RED}ОШИБКА: неизвестная опция ${1}. Используйте --help для справки${NC}"
+		echo -e "${RED}ERROR: Unknown option ${1}. Use --help for help.${NC}"
 		exit 1
 		;;
 esac
