@@ -68,6 +68,7 @@ Alternative (Local Repository):
 ## Example Output
 
 When running server-stat --start, you will see a neatly formatted interface resembling the following layout:
+```bash
 --------------------------------------Users--------------------------------------
 Users in network:
   username pts/0        2026-06-30 14:22 (192.168.1.5)
@@ -99,6 +100,7 @@ Top 5 processes by MEM usage:
   1234 /usr/lib/firefox/firefox    15.2  4.1
   ...
 --------------------------------------------------------------------------------
+```
 
 ## Error Handling
 
